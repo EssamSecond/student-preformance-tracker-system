@@ -166,7 +166,7 @@ export default function Marks() {
       <Toaster position="top-center" />
       <div className="flex justify-between items-center">
         <h2 className="text-3xl font-bold">Marks</h2>
-        <Button onClick={handleSave} disabled={loading}>
+         <Button onClick={handleSave} disabled={loading}>
           {loading ? 'Saving...' : 'Save Changes'}
         </Button>
       </div>
