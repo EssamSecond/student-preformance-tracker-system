@@ -19,6 +19,7 @@ const getAuthHeader = () => {
  *      monthlyTrend
  *    }
  */
+
 export const getDashboardStats = async () => {
   try {
     const response = await axios.get('/api/dashboard', {
