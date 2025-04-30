@@ -32,7 +32,6 @@ export default function Auth() {
       localStorage.setItem('user', JSON.stringify(userData));
       localStorage.setItem('token', data.token);
       navigate('/dashboard');
-      
     } catch (err) {
       setError(err.message || 'An error occurred');
       {error && ( // if error is not empty
@@ -45,6 +44,7 @@ export default function Auth() {
   }
 
   return (
+    //Dashboard UI
     <div className="min-h-screen flex items-center justify-center bg-gray-100 p-4">
       <Card className="w-full max-w-md">
         <CardHeader>
